@@ -8,19 +8,36 @@
 **/
 
 #include <Uefi.h>
-#include <Library/PcdLib.h>
+#include <Library/UefiRuntimeServicesTableLib.h>
 #include <Library/UefiLib.h>
-#include <Library/UefiApplicationEntryPoint.h>
+#include <Protocol/Timer.h>
+#include <Library/UefiBootServicesTableLib.h>
 
-//
-// String token ID of help message text.
-// Shell supports to find help message in the resource section of an application image if
-// .MAN file is not found. This global variable is added to make build tool recognizes
-// that the help string is consumed by user and then build tool will add the string into
-// the resource section. Thus the application can use '-?' option to show help message in
-// Shell.
-//
-GLOBAL_REMOVE_IF_UNREFERENCED EFI_STRING_ID  mStringHelpTokenId = STRING_TOKEN (STR_HELLO_WORLD_HELP_INFORMATION);
+int running = 1;
+int index = 0;
+
+typedef struct {
+    UINTN Signature;
+    EFI_EVENT PeriodicTimer;
+    EFI_EVENT OneShotTimer;
+    //
+    // Other device specific fields
+    //
+} EXAMPLE_DEVICE;
+
+VOID
+TimerHandler (
+    IN EFI_EVENT  Event,
+    IN VOID       *Context
+)
+{
+  Print (L"Timer print!");
+
+  index++;
+  if (index > 10) {
+    gBS->CloseEvent(Event);
+  }
+}
 
 /**
   The user Entry Point for Application. The user code starts with this function
@@ -33,28 +50,28 @@ GLOBAL_REMOVE_IF_UNREFERENCED EFI_STRING_ID  mStringHelpTokenId = STRING_TOKEN (
   @retval other             Some error occurs when executing this entry point.
 
 **/
-EFI_STATUS
-EFIAPI
-UefiMain (
-  IN EFI_HANDLE        ImageHandle,
-  IN EFI_SYSTEM_TABLE  *SystemTable
-  )
-{
-  UINT32  Index;
+EFI_STATUS EFIAPI
+UefiMain (IN
+          EFI_HANDLE ImageHandle, IN
+          EFI_SYSTEM_TABLE *SystemTable) {
+  UINT32 Index;
+  EXAMPLE_DEVICE *Device;
+  EFI_STATUS Status;
 
-  Index = 0;
+  gBS->CreateEvent (
+      EVT_TIMER | EVT_NOTIFY_SIGNAL,  // Type
+      TPL_NOTIFY,                     // NotifyTpl
+      TimerHandler,                   // NotifyFunction
+      Device,                         // NotifyContext
+      &Device->PeriodicTimer          // Event
+  );
+  gBS->SetTimer (
+      Device->PeriodicTimer,
+      TimerPeriodic,
+      EFI_TIMER_PERIOD_MILLISECONDS(100)
+  );
 
-  //
-  // Three PCD type (FeatureFlag, UINT32 and String) are used as the sample.
-  //
-  if (FeaturePcdGet (PcdHelloWorldPrintEnable)) {
-    for (Index = 0; Index < PcdGet32 (PcdHelloWorldPrintTimes); Index++) {
-      //
-      // Use UefiLib Print API to print string to UEFI console
-      //
-      Print ((CHAR16 *)PcdGetPtr (PcdHelloWorldPrintString));
-    }
-  }
-
+  // Event loop
+  while (running) {}
   return EFI_SUCCESS;
 }

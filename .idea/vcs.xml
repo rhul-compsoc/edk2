@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ArmPkg/Library/ArmSoftFloatLib/berkeley-softfloat-3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/BaseTools/Source/C/BrotliCompress/brotli" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CryptoPkg/Library/OpensslLib/openssl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MdeModulePkg/Universal/RegularExpressionDxe/oniguruma" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RedfishPkg/Library/JsonLib/jansson" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/UnitTestFrameworkPkg/Library/CmockaLib/cmocka" vcs="Git" />
+  </component>
+</project>
