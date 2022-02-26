@@ -339,13 +339,13 @@
 #
 #  MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
 #  MdeModulePkg/Application/BootManagerMenuApp/BootManagerMenuApp.inf
-#  MdeModulePkg/Application/UiApp/UiApp.inf{
-#    <LibraryClasses>
-#      NULL|MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerUiLib.inf
-#      NULL|MdeModulePkg/Library/BootDiscoveryPolicyUiLib/BootDiscoveryPolicyUiLib.inf
-#      NULL|MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib.inf
-#      NULL|MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManagerUiLib.inf
-#  }
+  MdeModulePkg/Application/UiApp/UiApp.inf{
+    <LibraryClasses>
+      NULL|MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerUiLib.inf
+      NULL|MdeModulePkg/Library/BootDiscoveryPolicyUiLib/BootDiscoveryPolicyUiLib.inf
+      NULL|MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib.inf
+      NULL|MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManagerUiLib.inf
+  }
 #  MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe.inf
 #  MdeModulePkg/Universal/BootManagerPolicyDxe/BootManagerPolicyDxe.inf
 #  MdeModulePkg/Universal/CapsulePei/CapsulePei.inf
