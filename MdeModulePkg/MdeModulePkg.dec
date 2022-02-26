@@ -1684,12 +1684,12 @@
   ## This PCD defines the times to print hello world string.
   #  This PCD is a sample to explain UINT32 PCD usage.
   # @Prompt HellowWorld print times.
-  gEfiMdeModulePkgTokenSpaceGuid.PcdHelloWorldPrintTimes|1|UINT32|0x40000005
+  gEfiMdeModulePkgTokenSpaceGuid.PcdHelloWorldPrintTimes|3|UINT32|0x40000005
 
   ## This PCD defines the HelloWorld print string.
   #  This PCD is a sample to explain String typed PCD usage.
   # @Prompt HelloWorld print string.
-  gEfiMdeModulePkgTokenSpaceGuid.PcdHelloWorldPrintString|L"UEFI Hello World!\n"|VOID*|0x40000004
+  gEfiMdeModulePkgTokenSpaceGuid.PcdHelloWorldPrintString|L"Welcome to Royal Holloway!\n"|VOID*|0x40000004
 
   ## Indicates the maximum size of the capsule image with a reset flag that the platform can support.
   #  The default max size is 100MB (0x6400000) for more than one large capsule images.
