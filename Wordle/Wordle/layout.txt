@@ -1,24 +1,24 @@
-Print(L"  EFI Clicker (Registered)  |                \n"
-"----------------------------|                \n"
-"                            |                \n"
-"000,000,000,000,000 Cookies |                \n"
-"                            |                \n"
-"----------------------------|                \n"
-"                            |                \n"
-"         , - ~ - ,          |                \n"
-"     , '           ' ,      |                \n"
-"   ,     #    £        ,    |                \n"
-"  ,                     ,   |                \n"
-" ,          ,     &      ,  |                \n"
-" ,     [                 ,  |                \n"
-" ,             @       ` ,  |                \n"
-"  ,      ]              ,   |                \n"
-"   ,             ;     ,    |                \n"
-"     ,     =        , '     |                \n"
-"       ' - , _ ,  '         |                \n"
-"                            |                \n"
-"                            |                \n"
-"   Press [SPACE] to click   |                \n"
-"                            |                \n"
-"                            |                \n"
-"abcdefghijklmnopqrstuvwxyz123456789abcdefghij\n";
+  EFI Clicker (Registered)  |1   O   Grandmas - Unemployed thanks to Greggs     
+----------------------------|   -|-# Costs £££££                                
+                            |   / \  Owned £££££ (£££££ cookies/s)              
+ ££££££££££££££££££ Cookies |---------------------------------------------------
+                            |2    /| Digger - Digs to Earth's molten cookie core
+----------------------------|  []/ O Costs £££££ (£££££ cookies/s)              
+                            |  ###   Owned £££££ (£££££ cookies/s)              
+         , - ~ - ,          |---------------------------------------------------
+     , '           ' ,      |3|FIRE| Web2.0 - Now with EU Cookie Pop-ups!       
+   ,     #    £        ,    | |FOX | Costs £££££ (£££££ cookies/s)              
+  ,                     ,   |/####/  Owned £££££ (£££££ cookies/s)              
+ ,          ,     &      ,  |---------------------------------------------------
+ ,     [                 ,  |4       £££££ DeSo Cookies - 100% of interviewed   
+ ,             @       ` ,  |  [ $ ] MLH and HUK reps have no comment on Web3.0 
+  ,      ]              ,   |        You own £££££ worthless tokens.            
+   ,             ;     ,    |---------------------------------------------------
+     ,     =        , '     |5  ===  Netherite Pickaxe with Fortune III         
+       ' - , _ ,  '         |    / | Costs £££££ (£££££ cookies/s)              
+                            |   /    Owned £££££ (£££££ cookies/s)              
+                            |---------------------------------------------------
+   Press [SPACE] to click   |6 _/\__ Blåhaj                                     
+ Press [1 to 9] to purchase |  _   / Costs £££££ (£££££ cookie/s)               
+                            |        Owned £££££ (£££££ cookie/s)               
+  Slam [END] for bankrupcy  |                                                   
