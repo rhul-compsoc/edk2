@@ -44,22 +44,22 @@ void layoutInitialise(struct gameState *state) {
    Print(L"----------------------------| []/ O Costs %d\n", DIGGER_COST / 1000);
    Print(L"                            | ###   Owned %d (%d cookies/s)\n", state->diggerCount, state->diggerCount * DIGGER_RATE / 1000);
    Print(L"         , - ~ - ,          | ------------------------------------------------\n");
-   Print(L"     , '           ' ,      |3  A   'Download Cookies' @ %d mbit/s\n", DOWNLOAD_RATE);
+   Print(L"     , '           ' ,      |3  A   BT Tower Transmissions @ %d mbit/s\n", DOWNLOAD_RATE);
    Print(L"   ,     #    £        ,    |  /X\\  Costs %d\n", DOWNLOAD_COST / 1000);
    Print(L"  ,                     ,   | /XXX\\ Owned %d (%d cookies/s)\n", state->downloadCount, state->downloadCount * DOWNLOAD_RATE / 1000);
    Print(L" ,          ,     &      ,  | ------------------------------------------------\n");
    Print(L" ,     [                 ,  |4 /-\\  DESO Coins @ %d cookies/s\n", DESO_RATE / 1000);
-   Print(L" ,             @       ` ,  | | $ |  Costs %d\n", DESO_COST / 1000);
+   Print(L" ,             @       ` ,  | | $ |  Costs %d, Worth nothing\n", DESO_COST / 1000);
    Print(L"  ,      ]              ,   |  \\-/  Owned %d (%d cookies/s)\n", state->desoCount, state->desoCount * DESO_RATE / 1000);
-   Print(L"   ,             ;     ,    |                \n");
-   Print(L"     ,     =        , '     |                \n");
-   Print(L"       ' - , _ ,  '         |                \n");
-   Print(L"                            |                \n");
-   Print(L"                            |                \n");
-   Print(L"   Press [SPACE] to click   |                \n");
-   Print(L"                            |                \n");
-   Print(L"                            |                \n");
-   Print(L"                            |abcdefghijklmnop\n");
+   Print(L"   ,             ;     ,    | ------------------------------------------------\n");
+   Print(L"     ,     =        , '     |\n");
+   Print(L"       ' - , _ ,  '         |\n");
+   Print(L"                            |\n");
+   Print(L"                            |\n");
+   Print(L"   Press [SPACE] to click   |\n");
+   Print(L"                            |\n");
+   Print(L"                            |\n");
+   Print(L"                            |\n");
 }
 
 /**
